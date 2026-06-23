@@ -106,6 +106,24 @@ main img {
     width: 100%;
 }
 
+article  a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #06381c;
+    background-color: #97dfb7;
+    padding: 2px 5px 2px 5px;
+    font-weight: bolder;
+    text-decoration: none;
+    list-style-type: '\2714\00a0\00a0';
+}
+
+aside a{
+    background-color: transparent;
+}
+
+a.externo::after {
+    content: '\00a0\1f517';
+}
+
 div.trimagem {
     min-width: 100px;
     max-width: 400px;
@@ -130,6 +148,22 @@ ul {
     columns: 2;
     list-style-position: inside;
     list-style-type: '\2714\00a0\00a0';
+}
+
+div.video {
+    background-color: #06381c;
+    margin: 20px -20px 30px -20px;
+    padding: 0px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 footer {
